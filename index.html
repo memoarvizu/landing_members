@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="https://contents.samsungmembers.com/share/img/app_ico.png" sizes="144x144">
+    <title>Landing Samsung Members</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+
+</head>
+
+<body>
+
+    <p class="heading"><span class="subtitle">Bievenido a Samsung Members</span><br>Ahora perteneces a esta comunidad exclusiva que te ofrece</p>
+
+    <!-- Carrusel -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/pic1.png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+
+        <!-- <h1 class="heading">Features are Available in The Watch</h1> -->
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" target="_blank"><img src="images/pic1.png" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="#" target="_blank"><img src="images/pic1.png" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="#" target="_blank"><img src="images/pic1.png" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="#" target="_blank"><img src="images/pic1.png" alt=""></a>
+            </div>
+
+        </div>
+
+        <section class="content-accordion">
+
+            <div>
+                <img src="images/banner_members.jpg" style="border-radius: 20px;" width="100%" alt="">
+            </div>
+
+            <h2 class="faqs-title">Preguntas Frecuentes</h2>
+            <div class="faq">
+                <div class="question">
+                    <h3>¿Cómo encontrar mis beneficios?</h3>
+                    <!-- <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="10" stroke-linecap="round"/>
+                    </svg> -->
+                </div>
+                <div class="answer">
+                    <p>Sí, existen tres puntos de retorno en Ciudad de México y Área Metropolitana, los cuales reciben residuos de productos electrónicos Samsung</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>¿Cómo activar tus push notifications?</h3>
+                    <!-- <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="10" stroke-linecap="round"/>
+                    </svg> -->
+                </div>
+                <div class="answer">
+                    <p>No, solo debes llevar tus residuos electrónicos Samsung a los puntos de retorno Eco Service disponibles en CDMX y Área Metropolitana. El costo por entregar los residuos debe ser por parte del cliente. </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>¿Cómo guardar y consultar mis cupones?</h3>
+                    <!-- <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="10" stroke-linecap="round"/>
+                    </svg> -->
+                </div>
+                <div class="answer">
+                    <p>Los productos que puedes llevar nuestros puntos de retorno son cualquier producto o accesorio Samsung cuya vida útil hay terminado, tales como: Lavadoras, secadoras, refrigeradores, televisores, celulares, cables, baterías, microondas
+                        etc. </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>¿Cómo agendar cita con soporte técnico?</h3>
+                    <!-- <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke-width="10" stroke-linecap="round"/>
+                    </svg> -->
+                </div>
+                <div class="answer">
+                    <p>Los productos que puedes llevar nuestros puntos de retorno son cualquier producto o accesorio Samsung cuya vida útil hay terminado, tales como: Lavadoras, secadoras, refrigeradores, televisores, celulares, cables, baterías, microondas
+                        etc. </p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach((faq) => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+            })
+        })
+    </script>
+
+</body>
+
+</html>
