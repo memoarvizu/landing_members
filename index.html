@@ -20,7 +20,14 @@
 
 <body>
 
-    <p class="heading"><span class="subtitle">Bievenido a Samsung Members</span><br>Ahora perteneces a esta comunidad exclusiva que te ofrece</p>
+    <p class="heading">
+        <span class="subtitle">Bievenido a Samsung Members</span>
+        <br><br>Solo por tener un Galaxy tienes acceso
+        <br>a beneficios exclusivos con ahorros de
+        <br>más de $15,500 al año, soporte técnico
+        <br>personaliado 24/7 y formar parte de
+        <br>una comunidad de expertos que
+        <br>buscan lo mejor, como tú</p>
 
     <!-- Carrusel -->
     <div class="swiper-container mySwiper">
@@ -165,6 +172,10 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: ".swiper-pagination",
