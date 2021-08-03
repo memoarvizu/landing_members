@@ -41,7 +41,7 @@ section {
     background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 2.3rem;
+    font-size: 15px;
     color: #000;
     padding: 4rem;
 }
@@ -213,5 +213,47 @@ svg {
 @media (max-width:426px) {
     .features .box-container .box {
         width: 22rem;
+    }
+}
+
+@media (max-width:466px) {
+    .features .box-container .box {
+        width: 22rem;
+    }
+}
+
+@media (max-width:408px) {
+    .features .box-container .box {
+        width: 18rem;
+    }
+    .heading {
+        font-size: 12px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .faqs-title {
+        font-size: 2.8rem;
+    }
+    .question h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:341px) {
+    .features .box-container .box {
+        width: 17.5rem;
+    }
+    .heading {
+        font-size: 11px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .faqs-title {
+        font-size: 2.7rem;
+    }
+    .question h3 {
+        font-size: 1.4rem;
     }
 }
